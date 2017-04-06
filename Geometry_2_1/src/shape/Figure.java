@@ -8,7 +8,7 @@ public class Figure {
  
     public static void main(String[] args) throws IOException
     {
-        System.out.print("¬ведите номер фигуры \n" + "Square - 1\n"
+        System.out.print("Enter figure number \n" + "Square - 1\n"
                                                    + "Circle - 2\n"
                                                    + "Triangle - 3\n"
                                                    + "Rectangle - 4\n");
