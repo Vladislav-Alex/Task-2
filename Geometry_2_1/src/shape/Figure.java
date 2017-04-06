@@ -8,17 +8,17 @@ public class Figure {
  
     public static void main(String[] args) throws IOException
     {
-        System.out.print("Введите номер фигуры \n" + "Квадрат - 1\n"
-                                                   + "Окружность - 2\n"
-                                                   + "Треугольник - 3\n"
-                                                   + "Прямоугольник - 4\n");
+        System.out.print("Введите номер фигуры \n" + "Square - 1\n"
+                                                   + "Сircle - 2\n"
+                                                   + "Triangle - 3\n"
+                                                   + "Rectangle - 4\n");
         try {
             Scanner in = new Scanner(System.in);
         int repeat = 4;
         while (repeat > 0) {
             selectFigure(in.nextInt());
 
-            System.out.println("Хотите продолжить? (если нет, введите No)");
+            System.out.println("Do you want to continue? (if no, enter No)");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String str = br.readLine();
             if(str.equalsIgnoreCase("NO")) {
@@ -28,7 +28,7 @@ public class Figure {
         }
         in.close();
         } catch (InputMismatchException e) {
-            System.out.println("Введено некорректное значение");
+            System.out.println("Invalid value entered");
         }
     }
 
@@ -59,7 +59,7 @@ public class Figure {
                 break;
 
             default:
-                System.out.print("Попробуй еще раз \n");
+                System.out.print("Try once more \n");
                 break;
         }
     }

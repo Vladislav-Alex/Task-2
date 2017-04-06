@@ -5,7 +5,7 @@ public class Rectangle extends Square{
     double nums1;
     Scanner in = new Scanner(System.in);
     Rectangle() {
-        System.out.print("¬ведите значение другой стороны b = ");
+        System.out.print("Enter the value of the other side b = ");
         nums1 = in.nextDouble();
     }
     public void GetPerimeter() {

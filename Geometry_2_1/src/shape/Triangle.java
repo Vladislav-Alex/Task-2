@@ -5,7 +5,7 @@ public class Triangle implements Geometry {
     double[] nums = new double[4];
     Scanner in = new Scanner(System.in);
     Triangle() {
-        System.out.println("¬ведите значени€ высоты h и основани€ a, и сторон b , c");
+        System.out.println("Enter the height values h, the base - a, and the sides b , c");
 
         for(int i = 0; i < 4; i++){
             nums[i] = in.nextDouble();

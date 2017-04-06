@@ -6,7 +6,7 @@ public class Ñircle implements Geometry{
     double p = 3.14;
     Scanner in = new Scanner(System.in);
     Ñircle() {
-        System.out.print("Ââåäèòå ğàäèóñ : radius = ");
+        System.out.print("Enter the radius : radius = ");
         radius = in.nextDouble();
     }
     public void GetPerimeter() {

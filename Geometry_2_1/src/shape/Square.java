@@ -5,7 +5,7 @@ public class Square implements Geometry {
     double nums;
     Scanner in = new Scanner(System.in);
     Square() {
-        System.out.print("¬ведите значение стороны a = ");
+        System.out.print("Enter the value of the side a = ");
         nums = in.nextDouble();
     }
     public void GetPerimeter() {
