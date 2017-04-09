@@ -1,21 +1,22 @@
 package shape;
-import java.util.Scanner;
 
-public class Square implements Geometry {
-    double nums;
-    Scanner in = new Scanner(System.in);
-    Square() {
-        System.out.print("Enter the value of the side a = ");
-        nums = in.nextDouble();
+public class Square implements GeometryInterface {
+    double a;
+    double b;
+    Square(double value_) {
+        a = b = value_;
     }
-    public void GetPerimeter() {
-        double Perimeter = nums * 4;
-        System.out.println("Perimeter = a * 4 = " + Perimeter);
+    Square(double[] sideRec_) {
+        a = sideRec_[0];
+        b = sideRec_[1];
     }
-    public void GetArea() {
-        double Area = Math.pow(nums , 2);
-        System.out.println("Area = a ^ 2 = " + Area);
-        
+    public void getPerimeter() {
+        double perimeter = a * 4;
+        System.out.println("Perimeter = a * 4 = " + perimeter);
+    }
+    public void getArea() {
+        double area = a * b;
+        System.out.println("Area = a * b = " + area);
     }
 }
 
