@@ -19,3 +19,4 @@ public class Square implements GeometryInterface {
         System.out.println("Area = a * b = " + area);
     }
 }
+

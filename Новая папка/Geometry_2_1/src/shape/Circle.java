@@ -15,3 +15,4 @@ public class Circle implements GeometryInterface{
         System.out.println("Area = radius ^ 2 * p = " + area);
     }
 }
+

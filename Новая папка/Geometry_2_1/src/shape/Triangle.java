@@ -16,3 +16,4 @@ public class Triangle implements GeometryInterface {
         System.out.println("Area = 1 / 2 * a * h = " + area);
     }
 }
+

@@ -4,7 +4,7 @@ public class Rectangle extends Square {
     double[] sideRec = new double[2];
     Rectangle(double[] sideRec_) {
         super(sideRec_);
-        for (int i = 0; i < sideRec_.length; i++) {
+        for(int i = 0; i < sideRec_.length; i++){
             sideRec[i] = sideRec_[i];
         }
     }
@@ -13,3 +13,4 @@ public class Rectangle extends Square {
         System.out.println("Perimeter = (a + b) * 2 = " + perimeter);
     }
 }
+

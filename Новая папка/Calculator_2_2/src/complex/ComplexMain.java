@@ -8,14 +8,15 @@ public class ComplexMain {
         int SIZE = 2;
         double[] nums1 = new double[SIZE];
         double[] nums2 = new double[SIZE];
-        Scanner in = new Scanner(System.in);
+
         try {
+            Scanner in = new Scanner(System.in);
             System.out.println("Enter the real and imaginary parts of the first number");
-            for (int i = 0; i < SIZE; i++) {
+            for(int i = 0; i < SIZE; i++){
                 nums1[i] = in.nextDouble();
             }
             System.out.println("Enter the real and imaginary parts of the second number");
-            for (int i = 0; i < SIZE; i++) {
+            for(int i = 0; i < SIZE; i++){
                 nums2[i] = in.nextDouble();
             }
             Complex result = new Complex(0.0, 0.0);
@@ -39,10 +40,12 @@ public class ComplexMain {
                   break;
             }
             result.toPrint();
+            //in.close();
         } catch (InputMismatchException e) {
             System.out.println("Invalid value entered");
         } finally {
+        	System.out.print("jghf");
             in.close();
-          }
+        }
     }
 }

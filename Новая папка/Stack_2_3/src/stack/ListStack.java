@@ -31,3 +31,4 @@ class LinkedList {
         return currentTempElem.data;
     }
 }
+

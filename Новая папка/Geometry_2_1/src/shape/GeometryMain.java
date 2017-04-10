@@ -1,12 +1,12 @@
 package shape;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GeometryMain {
     static final Scanner in = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.print("Enter figure number \n" + "Square - 1\n"
                                                   + "Circle - 2\n"
                                                   + "Triangle - 3\n"
@@ -15,21 +15,20 @@ public class GeometryMain {
 
             int repeat = 5;
             String figure = in.next();
-            while (repeat >= 0) {
+            while (repeat > 0) {
                 selectFigure(figure);
                 System.out.println("\nYou have " + repeat + " attempts to select apropriate figure." +
                                    " If you want to finish enter No");
                 figure = in.next();
-                if (figure.equalsIgnoreCase("NO")) {
+                if(figure.equalsIgnoreCase("NO")) {
                     break;
                 }
                 repeat--;
             }
+            in.close();
         } catch (InputMismatchException e) {
             System.out.println("Invalid value entered.");
-        } finally {
-            in.close();
-          }
+        }
     }
 
     static void selectFigure(String figure) {

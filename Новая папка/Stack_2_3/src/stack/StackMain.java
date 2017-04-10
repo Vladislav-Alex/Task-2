@@ -9,13 +9,13 @@ public class StackMain {
     public static void main(String [] args) {
         ListStack stack = new ListStack();
         System.out.print("Push elem: ");
-        for (int i = 0; i < COUNT; i++) {
+        for(int i = 0; i < COUNT; i++) {
             int num = (int)(Math.random() * 11);
             stack.push(num);
             System.out.print(num + " ");
         }
         System.out.print("\nPop elem: ");
-        for (int i = 0; i < COUNT; i++) {
+        for(int i = 0; i < COUNT; i++) {
             System.out.print(stack.pop() + " ");
         }
     }
